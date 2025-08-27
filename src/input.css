@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.before{
+    @apply relative before:content-[""] before:absolute before:w-1 before:h-1  before:rounded-full before:-bottom-2 before:left-1/2 hover:before:bg-orange hover:text-orange
+    active:before:bg-orange
+    active:text-orange;
+}
+.portfolio-btn{
+    @apply relative before:content-[""] before:absolute before:w-1 before:h-1  before:rounded-full before:-bottom-2 before:left-1/2 hover:before:bg-orange hover:text-orange
+    active:before:bg-orange
+    active:text-orange;
+}
+.data-filter-box-details{
+    @apply w-full h-[100%] bg-dark absolute top-0 bg-opacity-70 opacity-0 hover:opacity-100 active:opacity-100;
+}
+.data-filter-box-cetagory{
+    @apply py-2 px-5 bg-orange inline-block text-white text-2xl font-bold rounded-b-3xl ml-10;
+}
+.data-filter-fa-container{
+    @apply w-[50px] h-[50px] bg-orange rounded-full flex justify-center items-center absolute bottom-10 left-10 cursor-pointer;
+}
+
+.menu-active{
+    position: relative;
+    color: #ff6b5c;
+}
+.menu-active::before{
+    content:'';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #ff6b5c;
+    border-radius: 100%;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.portfolio-active{
+    position: relative;
+    color: #ff6b5c;
+}
+.portfolio-active::before{
+    content:'';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #ff6b5c;
+    border-radius: 100%;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.swiper-pagination{
+    position: inherit;
+    margin-top: 20px;
+}
+.swiper-pagination-bullet{
+    background-color: #ff6b5c;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    width: 20px;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+}
+
+.btt{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    background: #ff6b5c;
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}

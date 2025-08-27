@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabbir</title>
+    <link rel="icon" type="image/x-icon" href="./images/avatar.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="overflow-x-hidden">
+    <header class="w-full h-20 bg-light dark:bg-dim fixed top-0 left-0 z-50">
+        <div class="container mx-auto flex justify-between items-center h-full">
+          <!-- left -->
+          <div class="logo">
+            <h1 class="text-black text-3xl font-bold cursor-pointer dark:text-white">Akash<span class="text-orange">.</span></h1>
+          </div>
+          <!-- right -->
+          <!-- mobile menu -->
+          <div class="icon lg:hidden flex gap-x-8 font-bold text-black dark:text-white text-sm">
+            <i class="fa-solid fa-moon fa-sun text-xl cursor-pointer mobile-theme"></i>
+            <i id="humbarg" class="fa-solid fa-bars text-black dark:text-white text-xl cursor-pointer"></i>
+          </div>
+          <menu class="lg:hidden bg-light dark:bg-dim w-full absolute top-20 left-[110%] border-t-2 border-t-orange transition-all ease-in-out duration-100 mobile">
+            <ul class="flex flex-col gap-y-9 font-bold text-black dark:text-white text-sm items-center py-16">
+              <li><a href="#home" class="before menu-active">Home</a></li>
+              <li><a href="#about" class="before">About</a></li>
+              <li><a href="#portfolio" class="before">Portfolio</a></li>
+              <li><a href="#testimonial" class="before">Testimonial</a></li>
+              <li><a href="#blog" class="before">Blog</a></li>
+              <li><a href="#contact" class="before">Contact</a></li>
+            </ul>
+          </menu>
+          <!-- computer menu -->
+          <menu class="hidden computer lg:block">
+            <ul class="flex gap-x-9 font-bold text-black dark:text-white text-sm items-center">
+              <li><a href="#home" class="before menu-active">Home</a></li>
+              <li><a href="#about" class="before">About</a></li>
+              <li><a href="#portfolio" class="before">Portfolio</a></li>
+              <li><a href="#testimonial" class="before">Testimonial</a></li>
+              <li><a href="#blog" class="before">Blog</a></li>
+              <li><a href="#contact" class="before">Contact</a></li>
+              <i class="fa-solid fa-moon fa-sun text-xl cursor-pointer theme"></i>
+            </ul>
+          </menu>
+        </div>
+    </header>
+
+    <!-- HOME SECTION START -->
+    <section id="home" class="bg-light dark:bg-dim">
+        <div class="container mx-auto h-[80vh] md:h-screen flex flex-col justify-center items-center home-contant">
+            <img src="./images/avatar-1.svg" alt="">
+            <h1 class="text-black dark:text-white text-3xl font-bold py-3 md:py-7">Saidul Haque Akash</h1>
+            <span class="text-black dark:text-white text-xl pb-3 md:pb-5">I'm a Front-End developer</span>
+            <div class="icons text-black dark:text-white text-2xl flex gap-4 pb-2 md:pb-5">
+                <i class="fa-brands fa-instagram cursor-pointer"></i>
+                <i class="fa-brands fa-twitter cursor-pointer"></i>
+                <i class="fa-brands fa-behance cursor-pointer"></i>
+                <i class="fa-brands fa-pinterest cursor-pointer"></i>
+            </div>
+            <button class="text-black dark:text-white py-2 px-7 text-xl font-bold bg-orange rounded-3xl cursor-pointer border-2 border-orange hover:bg-transparent hover:text-orange transition-all ease-in-out duration-100">Hire Me</button>
+        </div>
+    </section>
+    <!-- HOME SECTION END -->
+
+    <!-- ABOUT SECTION START -->
+  <section id="about" class="bg-light dark:bg-dim pt-20 pb-10 lg:pb-0 lg:h-screen">
+    <div class="container mx-auto">
+      <div class="title py-10">
+        <h2 class="text-black dark:text-white text-4xl font-semibold self-start">About</h2>
+      </div>
+      <div class="details flex flex-col lg:flex-row lg:items-start lg:gap-x-28 justify-center items-center">
+        <img src="./images/avatar-2.svg" alt="" class="">
+        <div class="box w-full h-auto bg-[#2a2742] p-8 rounded-2xl my-10 lg:my-0 md:flex md:gap-10">
+          <div class="description md:w-[50%]">
+            <p class="text-white text-justify text-lg md:w-full">I am Sabbir Ahmed. Web developer from Dhaka, bangladesh. I have rich experience in web site design and building and customization. Also I am good at WordPress.</p>
+            <button class="text-white my-5 py-2 px-7 text-xl font-bold bg-orange rounded-3xl cursor-pointer hover:bg-white hover:text-orange transition-all ease-in-out duration-100">Download CV</button>
+          </div>
+          <div class="progress-bar md:w-[50%]">
+            <div class="bar pt-3">
+              <div class="bar-titel pb-5 flex justify-between">
+                <div class="name">
+                  <p class="text-white">Development</p>
+                </div>
+                <div class="percentage text-white">
+                  <p><span>95</span>%</p>
+                </div>
+              </div>
+              <div class="bar-base w-full h-2 bg-light rounded-full">
+                <div class="bar-filter w-[95%] h-2 bg-yellow rounded-full"></div>
+              </div>
+            </div>
+            <div class="bar pt-3">
+              <div class="bar-titel pb-5 flex justify-between">
+                <div class="name">
+                  <p class="text-white">Photography</p>
+                </div>
+                <div class="percentage text-white">
+                  <p><span>75</span>%</p>
+                </div>
+              </div>
+              <div class="bar-base w-full h-2 bg-light rounded-full">
+                <div class="bar-filter w-[75%] h-2 bg-orange rounded-full"></div>
+              </div>
+            </div>
+            <div class="bar pt-3">
+              <div class="bar-titel pb-5 flex justify-between">
+                <div class="name">
+                  <p class="text-white">UI/UX design</p>
+                </div>
+                <div class="percentage text-white">
+                  <p><span>85</span>%</p>
+                </div>
+              </div>
+              <div class="bar-base w-full h-2 bg-light rounded-full">
+                <div class="bar-filter w-[85%] h-2 bg-skyblue rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-footer flex flex-col flex-wrap gap-y-10 md:gap-y-0 md:flex-row justify-between mt-16">
+        <div class="left flex justify-between md:w-1/2">
+          <div class="box text-black dark:text-white text-center w-1/2">
+            <i class="fa-regular fa-heart text-2xl"></i>
+            <p class="text-xl py-1 font-bold">198</p>
+            <p class="text-sm font-bold">Project Done</p>
+          </div>
+          <div class="box text-black dark:text-white text-center w-1/2">
+            <i class="fa-solid fa-mug-hot text-2xl"></i>
+            <p class="text-xl py-1 font-bold">6798</p>
+            <p class="text-sm font-bold">Cup of Coffee</p>
+          </div>
+        </div>
+        <div class="right flex justify-between md:w-1/2">
+          <div class="box text-black dark:text-white text-center w-1/2">
+            <i class="fa-solid fa-people-group text-2xl"></i>
+            <p class="text-xl py-1 font-bold">428</p>
+            <p class="text-sm font-bold">Satisfied Clients</p>
+          </div>
+          <div class="box text-black dark:text-white text-center w-1/2">
+            <i class="fa-solid fa-trophy text-2xl"></i>
+            <p class="text-xl py-1 font-bold">28</p>
+            <p class="text-sm font-bold">Nominiees Winner</p>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT SECTION END -->
+
+
+  <!-- PORTFOLIO SECTION START -->
+  <section id="portfolio" class="bg-light dark:bg-dim pt-20 pb-10">
+    <div class="container mx-auto">
+      <div class="title py-10">
+        <h2 class=" text-black dark:text-white text-4xl font-bold self-start">Portfolio</h2>
+      </div>
+      <div class="data-filter-btn text-black dark:text-white text-xl flex gap-7 font-bold justify-center">
+        <button class="portfolio-btn portfolio-active" data-filter="all">Everything</button>
+        <button class="portfolio-btn" data-filter="art">Art</button>
+        <button class="portfolio-btn" data-filter="creative">Creative</button>
+        <button class="portfolio-btn" data-filter="design">Design</button>
+      </div>
+      <div class="data-filter w-full h-auto flex gap-2 flex-col md:flex-row flex-wrap mt-10">
+        <!-- BOX 1 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] relative filter-item art">
+          <img src="./images/1.svg" alt="">
+          <div class="data-filter-box-details">
+            <div class="data-filter-box-cetagory">
+              <h2>Art</h2>
+            </div>
+            <p class="text-white text-2xl font-bold ml-10 mt-10">Onboaeding Motivation</p>
+            <div class="data-filter-fa-container">
+              <i class="fa-solid fa-ellipsis text-white text-xl"></i>
+            </div>
+          </div>
+        </div>
+        <!-- BOX 2 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] relative filter-item creative">
+          <img src="./images/2.svg" alt="">
+          <div class="data-filter-box-details">
+            <div class="data-filter-box-cetagory">
+              <h2>Creative</h2>
+            </div>
+            <p class="text-white text-2xl font-bold ml-10 mt-10">Onboaeding Motivation</p>
+            <div class="data-filter-fa-container">
+              <i class="fa-solid fa-ellipsis text-white text-xl"></i>
+            </div>
+          </div>
+        </div>
+        <!-- BOX 3 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] relative filter-item design">
+          <img src="./images/3.svg" alt="">
+          <div class="data-filter-box-details">
+            <div class="data-filter-box-cetagory">
+              <h2>Design</h2>
+            </div>
+            <p class="text-white text-2xl font-bold ml-10 mt-10">Onboaeding Motivation</p>
+            <div class="data-filter-fa-container">
+              <i class="fa-solid fa-ellipsis text-white text-xl"></i>
+            </div>
+          </div>
+        </div>
+        <!-- BOX 4 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] relative filter-item art">
+          <img src="./images/4.svg" alt="">
+          <div class="data-filter-box-details">
+            <div class="data-filter-box-cetagory">
+              <h2>Art</h2>
+            </div>
+            <p class="text-white text-2xl font-bold ml-10 mt-10">Onboaeding Motivation</p>
+            <div class="data-filter-fa-container">
+              <i class="fa-solid fa-ellipsis text-white text-xl"></i>
+            </div>
+          </div>
+        </div>
+        <!-- BOX 5 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] relative filter-item creative">
+          <img src="./images/5.svg" alt="">
+          <div class="data-filter-box-details">
+            <div class="data-filter-box-cetagory">
+              <h2>Creative</h2>
+            </div>
+            <p class="text-white text-2xl font-bold ml-10 mt-10">Onboaeding Motivation</p>
+            <div class="data-filter-fa-container">
+              <i class="fa-solid fa-ellipsis text-white text-xl"></i>
+            </div>
+          </div>
+        </div>
+        <!-- BOX 6 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] relative filter-item design">
+          <img src="./images/6.svg" alt="">
+          <div class="data-filter-box-details">
+            <div class="data-filter-box-cetagory">
+              <h2>Design</h2>
+            </div>
+            <p class="text-white text-2xl font-bold ml-10 mt-10">Onboaeding Motivation</p>
+            <div class="data-filter-fa-container">
+              <i class="fa-solid fa-ellipsis text-white text-xl"></i>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- PORTFOLIO SECTION END -->
+
+  <!-- TESTIMONIAL SECTION START -->
+  <section id="testimonial" class="bg-light dark:bg-dim pt-20 pb-10 h-screen">
+    <div class="container mx-auto">
+      <div class="title py-10">
+        <h2 class=" text-black dark:text-white text-4xl font-bold self-start">Clients & Review</h2>
+      </div>
+      <div class="w-full swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- testimonila item 1 -->
+          <div class="w-full flex flex-col justify-center items-center swiper-slide">
+            <img src="./images/avatar-3.svg" alt="" class="w-32 h-32">
+            <h2 class="text-black dark:text-white text-2xl pt-4 font-bold">Sabbir Ahmed</h2>
+            <h2 class="text-[#9e9daa] text-md pt-1 font-bold">Product designer at WebApp</h2>
+            <div class="box w-2/3 text-center mt-10 py-10 px-2 md:px-10 lg:px-20 bg-[#3a345c] rounded-3xl">
+              <p class="text-white text-xl">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good Luck! 🔥</p>
+            </div>
+          </div>
+          <!-- testimonila item 2 -->
+          <div class="w-full flex flex-col justify-center items-center swiper-slide">
+            <img src="./images/avatar-1.svg" alt="" class="w-32 h-32">
+            <h2 class="text-black dark:text-white text-2xl pt-4 font-bold">Saidul Haque</h2>
+            <h2 class="text-[#9e9daa] text-md pt-1 font-bold">Product designer at WebApp</h2>
+            <div class="box w-2/3 text-center mt-10 py-10 px-2 md:px-10 lg:px-20 bg-[#3a345c] rounded-3xl">
+              <p class="text-white text-xl">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good Luck! 🔥</p>
+            </div>
+          </div>
+          <!-- testimonila item 3 -->
+          <div class="w-full flex flex-col justify-center items-center swiper-slide">
+            <img src="./images/avatar-2.svg" alt="" class="w-32 h-32">
+            <h2 class="text-black dark:text-white text-2xl pt-4 font-bold">Sahariar Hasan</h2>
+            <h2 class="text-[#9e9daa] text-md pt-1 font-bold">Product designer at WebApp</h2>
+            <div class="box w-2/3 text-center mt-10 py-10 px-2 md:px-10 lg:px-20 bg-[#3a345c] rounded-3xl">
+              <p class="text-white text-xl">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good Luck! 🔥</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+          <div class="swiper-pagination-bullet swiper-pagination-horizontal swiper-pagination-bullet-active "></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIAL SECTION END   -->
+
+  <!-- BLOG SECTION START -->
+  <section id="blog" class="bg-light dark:bg-dim pt-20 pb-10 lg:pb-0 lg:h-screen">
+    <div class="container mx-auto">
+      <div class="title py-10">
+        <h2 class=" text-black dark:text-white text-4xl font-bold self-start">Blog</h2>
+      </div>
+      <div class="data-filter w-full h-auto flex gap-2 flex-col md:flex-row flex-wrap mt-10">
+        <!-- BOX 1 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] bg-[#2a2742] relative rounded-3xl overflow-hidden cursor-pointer hover:-translate-y-3 transition-all duration-300 ease-in-out">
+          <div class="img w-full overflow-hidden">
+            <img src="./images/1.svg" alt="" class="hover:scale-125 transition-all duration-300 ease-in-out">
+          </div>
+          <div class="w-full py-7 px-5 hover:-translate-y-2 transition-all duration-300 ease-in-out">
+            <p class="text-white text-xl font-bold pb-3">5 Best App Development Tool for Your Projects</p>
+            <p class="text-white text-sm">09 February 2023 <span class="px-2">--</span> <span>Sabbir</span></p>
+          </div>
+          <p class="bg-orange text-black text-xl font-bold py-2 px-7 absolute top-0 z-[]">Reviews</p>
+        </div>
+        <!-- BOX 2 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] bg-[#2a2742] relative rounded-3xl overflow-hidden cursor-pointer hover:-translate-y-3 transition-all duration-300 ease-in-out">
+          <div class="img w-full overflow-hidden">
+            <img src="./images/2.svg" alt="" class="hover:scale-125 transition-all duration-300 ease-in-out">
+          </div>
+          <div class="w-full py-7 px-5 hover:-translate-y-2 transition-all duration-300 ease-in-out">
+            <p class="text-white text-xl font-bold pb-3">Common Misconceptions About Payment</p>
+            <p class="text-white text-sm">09 February 2023 <span class="px-2">--</span> <span>Sabbir</span></p>
+          </div>
+          <p class="bg-orange text-black text-xl font-bold py-2 px-7 absolute top-0 z-[]">Tutorial</p>
+        </div>
+        <!-- BOX 3 -->
+        <div class="box w-[100%] md:w-[48%] lg:w-[32%] bg-[#2a2742] relative rounded-3xl overflow-hidden cursor-pointer hover:-translate-y-3 transition-all duration-300 ease-in-out">
+          <div class="img w-full overflow-hidden">
+            <img src="./images/1.svg" alt="" class="hover:scale-125 transition-all duration-300 ease-in-out">
+          </div>
+          <div class="w-full py-7 px-5 hover:-translate-y-2 transition-all duration-300 ease-in-out">
+            <p class="text-white text-xl font-bold pb-3">3 Things to know about startup business</p>
+            <p class="text-white text-sm">09 February 2023 <span class="px-2">--</span> <span>Sabbir</span></p>
+          </div>
+          <p class="bg-orange text-black text-xl font-bold py-2 px-7 absolute top-0 z-[]">Business</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BLOG SECTION END -->
+
+  <!-- CONTACT SECTION START -->
+  <section id="contact" class="bg-light dark:bg-dim pt-20 pb-36  auto relative">
+    <div class="container mx-auto">
+      <div class="title py-10">
+        <h2 class=" text-black dark:text-white text-4xl font-bold self-start">Contact us</h2>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="details w-full md:w-1/2">
+          <p class="text-black dark:text-white text-2xl font-bold">Call us for instant support</p>
+          <span class="text-black dark:text-white text-xl font-thin"><i class="pr-1 fa-solid fa-phone"></i> +8801303142498</span>
+          <p class="text-black dark:text-white text-2xl font-bold pt-10">Write us by mail</p>
+          <span class="text-black dark:text-white text-xl font-thin"><i class="pr-1 fa-solid fa-envelope"></i> ilrsabbir@gmail.com</span>
+        </div>
+        <div class="form w-full md:w-1/2 pt-16 md:pt-0">
+          <form action="">
+            <div class="relative form-focus">
+              <input type="email" name="" id="" placeholder="Email" class="w-full bg-transparent border-b-2 border-white dark:border-gray-600 focus:border-orange dark:focus:border-orange outline-none dark:outline-none text-black dark:text-white text-xl">
+            </div>
+            <div class="relative pt-10 form-focus">
+              <input type="text" name="" id="" placeholder="Subject" class="w-full bg-transparent border-b-2 border-white dark:border-gray-600 focus:border-orange dark:focus:border-orange outline-none dark:outline-none text-black dark:text-white text-xl">
+            </div>
+            <div class="relative pt-10 form-focus-massege">
+              <textarea name="" id="" placeholder="Message" class="w-full bg-transparent border-b-2 border-white dark:border-gray-600 focus:border-orange dark:focus:border-orange outline-none dark:outline-none text-black dark:text-white text-xl my-3"></textarea>
+            </div>
+            <button type="submit" class="text-black dark:text-white py-2 px-7 text-xl font-bold bg-orange rounded-3xl cursor-pointer border-2 border-orange hover:bg-transparent hover:text-orange transition-all ease-in-out duration-100">Sent Massege</button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT SECTION END -->
+
+
+  <!-- FOOTER SECTION START -->
+  <footer class="bg-[#2a2742] w-full py-10">
+    <p class="text-white text-xl flex justify-center"> © 2023 Portfolio. Design With ❤ by Sabbir Ahmed</p>
+  </footer>
+  <!-- FOOTER SECTION END -->
+
+  <!-- BOTTOM TO TOP BUTTON START -->
+  <!-- <div class="w-12 h-12 bg-orange cursor-pointer rounded-xl text-center leading-[48px] text-black btt z-[1000] fixed">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div> -->
+  <div class="btt">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- BOTTOM TO TOP BUTTON END -->
+  
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/scrollreveal.js"></script> -->
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
